@@ -1,0 +1,15 @@
+<div class='jumbotron'>
+  <h1 class="display-3">MovieApp</h1>
+  <p class='lead'>
+  	<label for='actorText'>Acteur :</label>
+  	<input type='text' class='form-control' id='actorText'>
+  	<br/>
+    <a class='btn btn-primary btn-lg' role='button' id='searchButton'>Zoek films</a>
+    <br/>
+    <br/>
+    <b>De films waarin deze acteur speelt :</b>
+    <ul>
+   		<li ng-repeat="x in movies track by $index">{{x}}</li>
+	</ul>
+  </p>
+</div>
